@@ -7,7 +7,7 @@ driver = webdriver.Firefox()
 driver.get('https://www.academy.com/p/nike-womens-court-legacy-next-nature-shoes')
 
 # element = driver.find_element(By.CSS_SELECTOR, 'span.productTitle--FWmyK')
-element = driver.find_element(By.CSS_SELECTOR, "span[data-auid='PDP_ProductName']")
+element = driver.find_element(By.CSS_SELECTOR, "#pdp240TitleWrapper > h1")
 product_name = element.text
 product_name_element = driver.find_element(By.CSS_SELECTOR, 'span[data-auid="PDP_ProductName"]')
 print(product_name)
